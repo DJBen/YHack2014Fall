@@ -1,0 +1,1 @@
+../../../MessageDisplayKit/MessageDisplayKit/Classes/Vendor/XHImageViewer/XHImageViewer.h

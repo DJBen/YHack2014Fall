@@ -1,0 +1,1 @@
+../../../MessageDisplayKit/MessageDisplayKit/Classes/Vendor/MultiSelectTableViewController/MultiSelect/MultiSelectSearchResultTableViewCell.h

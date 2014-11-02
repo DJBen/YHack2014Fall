@@ -1,0 +1,1 @@
+../../../MessageDisplayKit/MessageDisplayKit/Classes/Controllers/XHProfileTableViewController/XHMoreMyAlbumTableViewController/XHMoreMyAlbumTableViewController.h

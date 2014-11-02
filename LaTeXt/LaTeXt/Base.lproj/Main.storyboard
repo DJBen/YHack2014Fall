@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="OrK-0B-Tej"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="3eC-yQ-c8x"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfw-zZ-GiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -53,6 +53,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="LaTeXt" id="JyG-Fk-Cke">
+                        <barButtonItem key="leftBarButtonItem" title="Login" id="fgV-7c-CpB"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="lkq-mH-vc1">
                             <connections>
                                 <action selector="activityButtonTapped:" destination="vXZ-lx-hvc" id="OrH-qq-d6t"/>
@@ -65,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="197"/>
+            <point key="canvasLocation" x="-341" y="197"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,1 @@
+../../../MessageDisplayKit/MessageDisplayKit/Classes/Controllers/XHDiscoverTableViewController/XHDiscoverTableViewController.h

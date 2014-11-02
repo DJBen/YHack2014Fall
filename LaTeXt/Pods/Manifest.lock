@@ -1,0 +1,13 @@
+PODS:
+  - AzureSDK-iOS (1.2.4)
+  - MessageDisplayKit (0.2.7)
+
+DEPENDENCIES:
+  - AzureSDK-iOS (~> 1.2.4)
+  - MessageDisplayKit
+
+SPEC CHECKSUMS:
+  AzureSDK-iOS: 24bb71975be4e42beaa94bb77d6d06aca8f3324b
+  MessageDisplayKit: 10da3c136acc64c8d864abc988190a04d67ae8c3
+
+COCOAPODS: 0.34.2

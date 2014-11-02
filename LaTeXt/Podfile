@@ -1,0 +1,3 @@
+pod 'AzureSDK-iOS', '~> 1.2.4'
+pod 'MessageDisplayKit'
+

@@ -1,0 +1,1 @@
+../../../MessageDisplayKit/MessageDisplayKit/Classes/Controllers/XHContactTableViewController/XHContactDetailTableViewController/XHContactDetailTableViewController.h

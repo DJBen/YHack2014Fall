@@ -8,90 +8,72 @@
 
 import UIKit
 
-class MessageViewController: UITableViewController {
-
+class MessageViewController: XHMessageTableViewController {
+    
+    private var activityController: UIActivityViewController!
+    private var loginButton: UIBarButtonItem!
+    @IBOutlet var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // Do any additional setup after loading the view, typically from a nib.\
+        let client = AzureManager.sharedManager.client
+        loginWithCompletion { (user, error) -> Void in
+            if error != nil {
+                return
+            }
+            if user != nil {
+                let message: [String: AnyObject] = ["content": "My fucking equation is $\\int_{i=1}^{k} nimabi(x)$, what do you think? $fff(x)$ or $shabi(x)$?", "recipient": "2"]
+                let messageTable = client.tableWithName("Message")
+                let codeTable = client.tableWithName("code")
+                messageTable.insert(message, completion: { (insertedItem, error) -> Void in
+                    println("INS: \(insertedItem): \(error)")
+                    let messageID: String = insertedItem["id"] as String
+                    codeTable.readWithPredicate(NSPredicate(format: "message_id == %@", messageID), completion: { (items, totalCount, error) -> Void in
+                        if error != nil {
+                            println("READ: \(error)")
+                            return
+                        }
+                        println("READ \(totalCount): \(items)")
+                    })
+                })
+            }
+        }
     }
-
+    
+    private func loginWithCompletion(completion: (MSUser?, NSError?) -> Void) {
+        let client = AzureManager.sharedManager.client
+        if client.currentUser == nil {
+            client.loginWithProvider("windowsazureactivedirectory", controller: self, animated: true, completion: { (user, error) -> Void in
+                completion(user, error)
+                println("\(user): \(error)")
+            })
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+    
+    @IBAction func activityButtonTapped(sender: UIButton!) {
+        LaTeXRenderer.sharedRenderer.fetchPreviewImageForLaTeX("\(textField.text)", fetchBlock: { (image, error) -> Void in
+            if error != nil {
+                println("Fetch preview error")
+            }
+            self.activityController = UIActivityViewController(activityItems: [image!], applicationActivities: nil)
+            self.activityController.completionWithItemsHandler = { activityType, success, returnedItems, error in
+                println(activityType)
+            }
+            self.presentViewController(self.activityController, animated: true, completion: nil)
+        })
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+
+    // MARK: Message VC Delegate
+    override func didSendText(text: String!, fromSender sender: String!, onDate date: NSDate!) {
+        let client = AzureManager.sharedManager.client
+        let message = XHMessage(text: text, sender: client.currentUser.userId, timestamp: date)
+        
     }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

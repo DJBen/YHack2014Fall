@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        AzureManager.sharedManager.client = MSClient(applicationURLString: "https://latext.azure-mobile.net/", applicationKey:"ozDrjPypzEXBzSChGwedIftrTxhCRN90")
         return true
     }
 

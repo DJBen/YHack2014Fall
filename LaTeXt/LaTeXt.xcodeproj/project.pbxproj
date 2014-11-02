@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89E5AE2948843D663A15877E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F692A28A49678F866D4388 /* libPods.a */; };
+		F48E34F21A05DB7E003B8C8B /* AzureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E34F11A05DB7E003B8C8B /* AzureManager.swift */; };
+		F48E34F41A05F5BC003B8C8B /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E34F31A05F5BC003B8C8B /* MessageViewController.swift */; };
+		F48E34F71A060354003B8C8B /* YHMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E34F61A060354003B8C8B /* YHMessage.swift */; };
 		F491452A1A049D8E004DCB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145291A049D8E004DCB29 /* AppDelegate.swift */; };
 		F491452C1A049D8E004DCB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491452B1A049D8E004DCB29 /* ViewController.swift */; };
 		F491452F1A049D8E004DCB29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F491452D1A049D8E004DCB29 /* Main.storyboard */; };
@@ -80,6 +84,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0383330CF28A980C21487520 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		36F692A28A49678F866D4388 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E3A8B4EA7F7B1CFA4F854B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F48E34ED1A05D874003B8C8B /* LaTeXt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaTeXt-Bridging-Header.h"; sourceTree = "<group>"; };
+		F48E34F11A05DB7E003B8C8B /* AzureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AzureManager.swift; sourceTree = "<group>"; };
+		F48E34F31A05F5BC003B8C8B /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		F48E34F61A060354003B8C8B /* YHMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHMessage.swift; sourceTree = "<group>"; };
 		F49145241A049D8E004DCB29 /* LaTeXt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTeXt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49145281A049D8E004DCB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49145291A049D8E004DCB29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E5AE2948843D663A15877E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +147,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C76201EE2B791379E7A13321 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36F692A28A49678F866D4388 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F34B42039286D0D719AD42BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0383330CF28A980C21487520 /* Pods.debug.xcconfig */,
+				39E3A8B4EA7F7B1CFA4F854B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F48E34F51A060336003B8C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9309E1A05B387005D0440 /* LaTeXRenderer.swift */,
+				F48E34F11A05DB7E003B8C8B /* AzureManager.swift */,
+				F48E34F61A060354003B8C8B /* YHMessage.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F491451B1A049D8E004DCB29 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +181,8 @@
 				F491453C1A049D8E004DCB29 /* LaTeXtTests */,
 				F491454E1A049E37004DCB29 /* LaTeXtKeyboard */,
 				F49145251A049D8E004DCB29 /* Products */,
+				F34B42039286D0D719AD42BA /* Pods */,
+				C76201EE2B791379E7A13321 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,12 +200,14 @@
 			isa = PBXGroup;
 			children = (
 				F49145291A049D8E004DCB29 /* AppDelegate.swift */,
-				F4C9309E1A05B387005D0440 /* LaTeXRenderer.swift */,
 				F491452B1A049D8E004DCB29 /* ViewController.swift */,
+				F48E34F31A05F5BC003B8C8B /* MessageViewController.swift */,
 				F491452D1A049D8E004DCB29 /* Main.storyboard */,
 				F49145301A049D8E004DCB29 /* Images.xcassets */,
 				F49145321A049D8E004DCB29 /* LaunchScreen.xib */,
+				F48E34F51A060336003B8C8B /* Models */,
 				F49145271A049D8E004DCB29 /* Supporting Files */,
+				F48E34ED1A05D874003B8C8B /* LaTeXt-Bridging-Header.h */,
 			);
 			path = LaTeXt;
 			sourceTree = "<group>";
@@ -240,10 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F49145431A049D8E004DCB29 /* Build configuration list for PBXNativeTarget "LaTeXt" */;
 			buildPhases = (
+				69DDB5187819CFE7A0C749FB /* Check Pods Manifest.lock */,
 				F49145201A049D8E004DCB29 /* Sources */,
 				F49145211A049D8E004DCB29 /* Frameworks */,
 				F49145221A049D8E004DCB29 /* Resources */,
 				F49145591A049E37004DCB29 /* Embed App Extensions */,
+				248992A73344990413FC6FBB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,11 +404,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		248992A73344990413FC6FBB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DDB5187819CFE7A0C749FB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F49145201A049D8E004DCB29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48E34F71A060354003B8C8B /* YHMessage.swift in Sources */,
 				F491452C1A049D8E004DCB29 /* ViewController.swift in Sources */,
 				F491452A1A049D8E004DCB29 /* AppDelegate.swift in Sources */,
 				F49145851A0566DB004DCB29 /* View.swift in Sources */,
@@ -375,8 +454,10 @@
 				F49145811A0566DB004DCB29 /* Property.swift in Sources */,
 				F491456D1A0566DB004DCB29 /* Compound.swift in Sources */,
 				F49145831A0566DB004DCB29 /* Size.swift in Sources */,
+				F48E34F21A05DB7E003B8C8B /* AzureManager.swift in Sources */,
 				F49145981A0587FB004DCB29 /* Alamofire.swift in Sources */,
 				F491457D1A0566DB004DCB29 /* Point.swift in Sources */,
+				F48E34F41A05F5BC003B8C8B /* MessageViewController.swift in Sources */,
 				F491456F1A0566DB004DCB29 /* Dimension.swift in Sources */,
 				F491457B1A0566DB004DCB29 /* LayoutProxy.swift in Sources */,
 				F491456B1A0566DB004DCB29 /* Coefficients.swift in Sources */,
@@ -529,23 +610,30 @@
 		};
 		F49145441A049D8E004DCB29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0383330CF28A980C21487520 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LaTeXt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTeXt/LaTeXt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F49145451A049D8E004DCB29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E3A8B4EA7F7B1CFA4F854B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LaTeXt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTeXt/LaTeXt-Bridging-Header.h";
 			};
 			name = Release;
 		};

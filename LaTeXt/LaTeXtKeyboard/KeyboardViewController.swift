@@ -173,15 +173,13 @@ class KeyboardViewController: UIInputViewController {
     }
     
     private func isExtraViewOpen() -> Bool {
-        return !extraView.hidden
-//        return extraViewHeightConstraint.constant > 0
+        return extraViewHeightConstraint.constant > 0
     }
     
     private func setExtraViewOpen(open: Bool) {
-        extraView.hidden = !open
-//        extraViewHeightConstraint.constant = open ? 44 : 0
-//        previewButton.hidden = !open
-//        view.layoutIfNeeded()
+        extraViewHeightConstraint.constant = open ? 44 : 0
+        previewButton.hidden = !open
+        view.layoutIfNeeded()
     }
     
     private func setHideRowSet(rowSet: [UIView]!, hidden: Bool) {
