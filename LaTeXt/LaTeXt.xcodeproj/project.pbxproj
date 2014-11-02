@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F491452A1A049D8E004DCB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145291A049D8E004DCB29 /* AppDelegate.swift */; };
+		F491452C1A049D8E004DCB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491452B1A049D8E004DCB29 /* ViewController.swift */; };
+		F491452F1A049D8E004DCB29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F491452D1A049D8E004DCB29 /* Main.storyboard */; };
+		F49145311A049D8E004DCB29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49145301A049D8E004DCB29 /* Images.xcassets */; };
+		F49145341A049D8E004DCB29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49145321A049D8E004DCB29 /* LaunchScreen.xib */; };
+		F49145401A049D8E004DCB29 /* LaTeXtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491453F1A049D8E004DCB29 /* LaTeXtTests.swift */; };
+		F49145521A049E37004DCB29 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145511A049E37004DCB29 /* KeyboardViewController.swift */; };
+		F49145551A049E37004DCB29 /* LaTeXtKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F491454D1A049E37004DCB29 /* LaTeXtKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F491455A1A055E7F004DCB29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49145301A049D8E004DCB29 /* Images.xcassets */; };
+		F491456B1A0566DB004DCB29 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491455D1A0566DB004DCB29 /* Coefficients.swift */; };
+		F491456C1A0566DB004DCB29 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491455D1A0566DB004DCB29 /* Coefficients.swift */; };
+		F491456D1A0566DB004DCB29 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491455E1A0566DB004DCB29 /* Compound.swift */; };
+		F491456E1A0566DB004DCB29 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491455E1A0566DB004DCB29 /* Compound.swift */; };
+		F491456F1A0566DB004DCB29 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491455F1A0566DB004DCB29 /* Dimension.swift */; };
+		F49145701A0566DB004DCB29 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491455F1A0566DB004DCB29 /* Dimension.swift */; };
+		F49145711A0566DB004DCB29 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145601A0566DB004DCB29 /* Edge.swift */; };
+		F49145721A0566DB004DCB29 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145601A0566DB004DCB29 /* Edge.swift */; };
+		F49145731A0566DB004DCB29 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145611A0566DB004DCB29 /* Edges.swift */; };
+		F49145741A0566DB004DCB29 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145611A0566DB004DCB29 /* Edges.swift */; };
+		F49145751A0566DB004DCB29 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145621A0566DB004DCB29 /* Expression.swift */; };
+		F49145761A0566DB004DCB29 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145621A0566DB004DCB29 /* Expression.swift */; };
+		F49145791A0566DB004DCB29 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145641A0566DB004DCB29 /* Layout.swift */; };
+		F491457A1A0566DB004DCB29 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145641A0566DB004DCB29 /* Layout.swift */; };
+		F491457B1A0566DB004DCB29 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145651A0566DB004DCB29 /* LayoutProxy.swift */; };
+		F491457C1A0566DB004DCB29 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145651A0566DB004DCB29 /* LayoutProxy.swift */; };
+		F491457D1A0566DB004DCB29 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145661A0566DB004DCB29 /* Point.swift */; };
+		F491457E1A0566DB004DCB29 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145661A0566DB004DCB29 /* Point.swift */; };
+		F491457F1A0566DB004DCB29 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145671A0566DB004DCB29 /* Priority.swift */; };
+		F49145801A0566DB004DCB29 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145671A0566DB004DCB29 /* Priority.swift */; };
+		F49145811A0566DB004DCB29 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145681A0566DB004DCB29 /* Property.swift */; };
+		F49145821A0566DB004DCB29 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145681A0566DB004DCB29 /* Property.swift */; };
+		F49145831A0566DB004DCB29 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145691A0566DB004DCB29 /* Size.swift */; };
+		F49145841A0566DB004DCB29 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145691A0566DB004DCB29 /* Size.swift */; };
+		F49145851A0566DB004DCB29 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491456A1A0566DB004DCB29 /* View.swift */; };
+		F49145861A0566DB004DCB29 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491456A1A0566DB004DCB29 /* View.swift */; };
+		F49145981A0587FB004DCB29 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145971A0587FB004DCB29 /* Alamofire.swift */; };
+		F49145991A0587FB004DCB29 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145971A0587FB004DCB29 /* Alamofire.swift */; };
+		F4C9309F1A05B387005D0440 /* LaTeXRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9309E1A05B387005D0440 /* LaTeXRenderer.swift */; };
+		F4C930A01A05B38B005D0440 /* LaTeXRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9309E1A05B387005D0440 /* LaTeXRenderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F491453A1A049D8E004DCB29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F491451C1A049D8E004DCB29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49145231A049D8E004DCB29;
+			remoteInfo = LaTeXt;
+		};
+		F49145531A049E37004DCB29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F491451C1A049D8E004DCB29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F491454C1A049E37004DCB29;
+			remoteInfo = LaTeXtKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F49145591A049E37004DCB29 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F49145551A049E37004DCB29 /* LaTeXtKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F49145241A049D8E004DCB29 /* LaTeXt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTeXt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49145281A049D8E004DCB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49145291A049D8E004DCB29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F491452B1A049D8E004DCB29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F491452E1A049D8E004DCB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F49145301A049D8E004DCB29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F49145331A049D8E004DCB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F49145391A049D8E004DCB29 /* LaTeXtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaTeXtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F491453E1A049D8E004DCB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F491453F1A049D8E004DCB29 /* LaTeXtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeXtTests.swift; sourceTree = "<group>"; };
+		F491454D1A049E37004DCB29 /* LaTeXtKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LaTeXtKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49145501A049E37004DCB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49145511A049E37004DCB29 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F491455D1A0566DB004DCB29 /* Coefficients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coefficients.swift; sourceTree = "<group>"; };
+		F491455E1A0566DB004DCB29 /* Compound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compound.swift; sourceTree = "<group>"; };
+		F491455F1A0566DB004DCB29 /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		F49145601A0566DB004DCB29 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		F49145611A0566DB004DCB29 /* Edges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edges.swift; sourceTree = "<group>"; };
+		F49145621A0566DB004DCB29 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		F49145641A0566DB004DCB29 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		F49145651A0566DB004DCB29 /* LayoutProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProxy.swift; sourceTree = "<group>"; };
+		F49145661A0566DB004DCB29 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		F49145671A0566DB004DCB29 /* Priority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		F49145681A0566DB004DCB29 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		F49145691A0566DB004DCB29 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		F491456A1A0566DB004DCB29 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F49145971A0587FB004DCB29 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		F4C9309E1A05B387005D0440 /* LaTeXRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaTeXRenderer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49145211A049D8E004DCB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49145361A049D8E004DCB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F491454A1A049E37004DCB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F491451B1A049D8E004DCB29 = {
+			isa = PBXGroup;
+			children = (
+				F49145261A049D8E004DCB29 /* LaTeXt */,
+				F491453C1A049D8E004DCB29 /* LaTeXtTests */,
+				F491454E1A049E37004DCB29 /* LaTeXtKeyboard */,
+				F49145251A049D8E004DCB29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F49145251A049D8E004DCB29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49145241A049D8E004DCB29 /* LaTeXt.app */,
+				F49145391A049D8E004DCB29 /* LaTeXtTests.xctest */,
+				F491454D1A049E37004DCB29 /* LaTeXtKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49145261A049D8E004DCB29 /* LaTeXt */ = {
+			isa = PBXGroup;
+			children = (
+				F49145291A049D8E004DCB29 /* AppDelegate.swift */,
+				F4C9309E1A05B387005D0440 /* LaTeXRenderer.swift */,
+				F491452B1A049D8E004DCB29 /* ViewController.swift */,
+				F491452D1A049D8E004DCB29 /* Main.storyboard */,
+				F49145301A049D8E004DCB29 /* Images.xcassets */,
+				F49145321A049D8E004DCB29 /* LaunchScreen.xib */,
+				F49145271A049D8E004DCB29 /* Supporting Files */,
+			);
+			path = LaTeXt;
+			sourceTree = "<group>";
+		};
+		F49145271A049D8E004DCB29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49145971A0587FB004DCB29 /* Alamofire.swift */,
+				F491455B1A0566DB004DCB29 /* Cartography */,
+				F49145281A049D8E004DCB29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F491453C1A049D8E004DCB29 /* LaTeXtTests */ = {
+			isa = PBXGroup;
+			children = (
+				F491453F1A049D8E004DCB29 /* LaTeXtTests.swift */,
+				F491453D1A049D8E004DCB29 /* Supporting Files */,
+			);
+			path = LaTeXtTests;
+			sourceTree = "<group>";
+		};
+		F491453D1A049D8E004DCB29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F491453E1A049D8E004DCB29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F491454E1A049E37004DCB29 /* LaTeXtKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F49145511A049E37004DCB29 /* KeyboardViewController.swift */,
+				F491454F1A049E37004DCB29 /* Supporting Files */,
+			);
+			path = LaTeXtKeyboard;
+			sourceTree = "<group>";
+		};
+		F491454F1A049E37004DCB29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49145501A049E37004DCB29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F491455B1A0566DB004DCB29 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				F491455D1A0566DB004DCB29 /* Coefficients.swift */,
+				F491455E1A0566DB004DCB29 /* Compound.swift */,
+				F491455F1A0566DB004DCB29 /* Dimension.swift */,
+				F49145601A0566DB004DCB29 /* Edge.swift */,
+				F49145611A0566DB004DCB29 /* Edges.swift */,
+				F49145621A0566DB004DCB29 /* Expression.swift */,
+				F49145641A0566DB004DCB29 /* Layout.swift */,
+				F49145651A0566DB004DCB29 /* LayoutProxy.swift */,
+				F49145661A0566DB004DCB29 /* Point.swift */,
+				F49145671A0566DB004DCB29 /* Priority.swift */,
+				F49145681A0566DB004DCB29 /* Property.swift */,
+				F49145691A0566DB004DCB29 /* Size.swift */,
+				F491456A1A0566DB004DCB29 /* View.swift */,
+			);
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F49145231A049D8E004DCB29 /* LaTeXt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49145431A049D8E004DCB29 /* Build configuration list for PBXNativeTarget "LaTeXt" */;
+			buildPhases = (
+				F49145201A049D8E004DCB29 /* Sources */,
+				F49145211A049D8E004DCB29 /* Frameworks */,
+				F49145221A049D8E004DCB29 /* Resources */,
+				F49145591A049E37004DCB29 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49145541A049E37004DCB29 /* PBXTargetDependency */,
+			);
+			name = LaTeXt;
+			productName = LaTeXt;
+			productReference = F49145241A049D8E004DCB29 /* LaTeXt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F49145381A049D8E004DCB29 /* LaTeXtTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49145461A049D8E004DCB29 /* Build configuration list for PBXNativeTarget "LaTeXtTests" */;
+			buildPhases = (
+				F49145351A049D8E004DCB29 /* Sources */,
+				F49145361A049D8E004DCB29 /* Frameworks */,
+				F49145371A049D8E004DCB29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F491453B1A049D8E004DCB29 /* PBXTargetDependency */,
+			);
+			name = LaTeXtTests;
+			productName = LaTeXtTests;
+			productReference = F49145391A049D8E004DCB29 /* LaTeXtTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F491454C1A049E37004DCB29 /* LaTeXtKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49145561A049E37004DCB29 /* Build configuration list for PBXNativeTarget "LaTeXtKeyboard" */;
+			buildPhases = (
+				F49145491A049E37004DCB29 /* Sources */,
+				F491454A1A049E37004DCB29 /* Frameworks */,
+				F491454B1A049E37004DCB29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaTeXtKeyboard;
+			productName = LaTeXtKeyboard;
+			productReference = F491454D1A049E37004DCB29 /* LaTeXtKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F491451C1A049D8E004DCB29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = DJ.Ben;
+				TargetAttributes = {
+					F49145231A049D8E004DCB29 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F49145381A049D8E004DCB29 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F49145231A049D8E004DCB29;
+					};
+					F491454C1A049E37004DCB29 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = F491451F1A049D8E004DCB29 /* Build configuration list for PBXProject "LaTeXt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F491451B1A049D8E004DCB29;
+			productRefGroup = F49145251A049D8E004DCB29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F49145231A049D8E004DCB29 /* LaTeXt */,
+				F49145381A049D8E004DCB29 /* LaTeXtTests */,
+				F491454C1A049E37004DCB29 /* LaTeXtKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F49145221A049D8E004DCB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F491452F1A049D8E004DCB29 /* Main.storyboard in Resources */,
+				F49145341A049D8E004DCB29 /* LaunchScreen.xib in Resources */,
+				F49145311A049D8E004DCB29 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49145371A049D8E004DCB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F491454B1A049E37004DCB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F491455A1A055E7F004DCB29 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49145201A049D8E004DCB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F491452C1A049D8E004DCB29 /* ViewController.swift in Sources */,
+				F491452A1A049D8E004DCB29 /* AppDelegate.swift in Sources */,
+				F49145851A0566DB004DCB29 /* View.swift in Sources */,
+				F49145711A0566DB004DCB29 /* Edge.swift in Sources */,
+				F4C9309F1A05B387005D0440 /* LaTeXRenderer.swift in Sources */,
+				F49145751A0566DB004DCB29 /* Expression.swift in Sources */,
+				F49145731A0566DB004DCB29 /* Edges.swift in Sources */,
+				F49145791A0566DB004DCB29 /* Layout.swift in Sources */,
+				F49145811A0566DB004DCB29 /* Property.swift in Sources */,
+				F491456D1A0566DB004DCB29 /* Compound.swift in Sources */,
+				F49145831A0566DB004DCB29 /* Size.swift in Sources */,
+				F49145981A0587FB004DCB29 /* Alamofire.swift in Sources */,
+				F491457D1A0566DB004DCB29 /* Point.swift in Sources */,
+				F491456F1A0566DB004DCB29 /* Dimension.swift in Sources */,
+				F491457B1A0566DB004DCB29 /* LayoutProxy.swift in Sources */,
+				F491456B1A0566DB004DCB29 /* Coefficients.swift in Sources */,
+				F491457F1A0566DB004DCB29 /* Priority.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49145351A049D8E004DCB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49145401A049D8E004DCB29 /* LaTeXtTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49145491A049E37004DCB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49145701A0566DB004DCB29 /* Dimension.swift in Sources */,
+				F49145521A049E37004DCB29 /* KeyboardViewController.swift in Sources */,
+				F49145741A0566DB004DCB29 /* Edges.swift in Sources */,
+				F4C930A01A05B38B005D0440 /* LaTeXRenderer.swift in Sources */,
+				F491456E1A0566DB004DCB29 /* Compound.swift in Sources */,
+				F49145721A0566DB004DCB29 /* Edge.swift in Sources */,
+				F491457A1A0566DB004DCB29 /* Layout.swift in Sources */,
+				F49145991A0587FB004DCB29 /* Alamofire.swift in Sources */,
+				F49145821A0566DB004DCB29 /* Property.swift in Sources */,
+				F491457E1A0566DB004DCB29 /* Point.swift in Sources */,
+				F49145801A0566DB004DCB29 /* Priority.swift in Sources */,
+				F49145761A0566DB004DCB29 /* Expression.swift in Sources */,
+				F491456C1A0566DB004DCB29 /* Coefficients.swift in Sources */,
+				F491457C1A0566DB004DCB29 /* LayoutProxy.swift in Sources */,
+				F49145861A0566DB004DCB29 /* View.swift in Sources */,
+				F49145841A0566DB004DCB29 /* Size.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F491453B1A049D8E004DCB29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49145231A049D8E004DCB29 /* LaTeXt */;
+			targetProxy = F491453A1A049D8E004DCB29 /* PBXContainerItemProxy */;
+		};
+		F49145541A049E37004DCB29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F491454C1A049E37004DCB29 /* LaTeXtKeyboard */;
+			targetProxy = F49145531A049E37004DCB29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F491452D1A049D8E004DCB29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F491452E1A049D8E004DCB29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F49145321A049D8E004DCB29 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F49145331A049D8E004DCB29 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F49145411A049D8E004DCB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F49145421A049D8E004DCB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F49145441A049D8E004DCB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LaTeXt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F49145451A049D8E004DCB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LaTeXt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F49145471A049D8E004DCB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LaTeXtTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaTeXt.app/LaTeXt";
+			};
+			name = Debug;
+		};
+		F49145481A049D8E004DCB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LaTeXtTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaTeXt.app/LaTeXt";
+			};
+			name = Release;
+		};
+		F49145571A049E37004DCB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LaTeXtKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F49145581A049E37004DCB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LaTeXtKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F491451F1A049D8E004DCB29 /* Build configuration list for PBXProject "LaTeXt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49145411A049D8E004DCB29 /* Debug */,
+				F49145421A049D8E004DCB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49145431A049D8E004DCB29 /* Build configuration list for PBXNativeTarget "LaTeXt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49145441A049D8E004DCB29 /* Debug */,
+				F49145451A049D8E004DCB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49145461A049D8E004DCB29 /* Build configuration list for PBXNativeTarget "LaTeXtTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49145471A049D8E004DCB29 /* Debug */,
+				F49145481A049D8E004DCB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49145561A049E37004DCB29 /* Build configuration list for PBXNativeTarget "LaTeXtKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49145571A049E37004DCB29 /* Debug */,
+				F49145581A049E37004DCB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F491451C1A049D8E004DCB29 /* Project object */;
+}
