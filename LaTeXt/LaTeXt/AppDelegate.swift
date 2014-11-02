@@ -13,12 +13,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         AzureManager.sharedManager.client = MSClient(applicationURLString: "https://latext.azure-mobile.net/", applicationKey:"ozDrjPypzEXBzSChGwedIftrTxhCRN90")
+        
+        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "nav-bar"), forBarMetrics: UIBarMetrics.Default)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
         return true
     }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        AzureManager.sharedManager.deviceToken = deviceToken
+    }
 
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println("Fail to register for remote notifications: \(error)")
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        let messageKey = "inAppMessage"
+        // TODO
+        println("RECEIVED REMOTE NOTIFICATION: \(userInfo)")
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89E5AE2948843D663A15877E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F692A28A49678F866D4388 /* libPods.a */; };
+		F46B7EBF1A0659DA00FEC201 /* MessageItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B7EBE1A0659DA00FEC201 /* MessageItemViewController.swift */; };
 		F48E34F21A05DB7E003B8C8B /* AzureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E34F11A05DB7E003B8C8B /* AzureManager.swift */; };
 		F48E34F41A05F5BC003B8C8B /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E34F31A05F5BC003B8C8B /* MessageViewController.swift */; };
 		F48E34F71A060354003B8C8B /* YHMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E34F61A060354003B8C8B /* YHMessage.swift */; };
@@ -15,7 +16,6 @@
 		F491452C1A049D8E004DCB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491452B1A049D8E004DCB29 /* ViewController.swift */; };
 		F491452F1A049D8E004DCB29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F491452D1A049D8E004DCB29 /* Main.storyboard */; };
 		F49145311A049D8E004DCB29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49145301A049D8E004DCB29 /* Images.xcassets */; };
-		F49145341A049D8E004DCB29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49145321A049D8E004DCB29 /* LaunchScreen.xib */; };
 		F49145401A049D8E004DCB29 /* LaTeXtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491453F1A049D8E004DCB29 /* LaTeXtTests.swift */; };
 		F49145521A049E37004DCB29 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49145511A049E37004DCB29 /* KeyboardViewController.swift */; };
 		F49145551A049E37004DCB29 /* LaTeXtKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F491454D1A049E37004DCB29 /* LaTeXtKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -87,6 +87,17 @@
 		0383330CF28A980C21487520 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		36F692A28A49678F866D4388 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E3A8B4EA7F7B1CFA4F854B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F4082B0E1A06499E004E44B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F4082B101A0649C6004E44B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4082B121A0649D0004E44B4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F4082B141A0649D4004E44B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F4082B161A0649DD004E44B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F4082B181A0649E2004E44B4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F4082B1A1A0649E9004E44B4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F4082B1C1A0649ED004E44B4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F4082B1E1A064A0E004E44B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4082B201A064A55004E44B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F46B7EBE1A0659DA00FEC201 /* MessageItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageItemViewController.swift; sourceTree = "<group>"; };
 		F48E34ED1A05D874003B8C8B /* LaTeXt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaTeXt-Bridging-Header.h"; sourceTree = "<group>"; };
 		F48E34F11A05DB7E003B8C8B /* AzureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AzureManager.swift; sourceTree = "<group>"; };
 		F48E34F31A05F5BC003B8C8B /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +108,6 @@
 		F491452B1A049D8E004DCB29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F491452E1A049D8E004DCB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F49145301A049D8E004DCB29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F49145331A049D8E004DCB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F49145391A049D8E004DCB29 /* LaTeXtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaTeXtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F491453E1A049D8E004DCB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F491453F1A049D8E004DCB29 /* LaTeXtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeXtTests.swift; sourceTree = "<group>"; };
@@ -150,6 +160,16 @@
 		C76201EE2B791379E7A13321 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4082B201A064A55004E44B4 /* UIKit.framework */,
+				F4082B1E1A064A0E004E44B4 /* Foundation.framework */,
+				F4082B1C1A0649ED004E44B4 /* CoreText.framework */,
+				F4082B1A1A0649E9004E44B4 /* CoreMedia.framework */,
+				F4082B181A0649E2004E44B4 /* MediaPlayer.framework */,
+				F4082B161A0649DD004E44B4 /* CoreLocation.framework */,
+				F4082B141A0649D4004E44B4 /* AVFoundation.framework */,
+				F4082B121A0649D0004E44B4 /* MobileCoreServices.framework */,
+				F4082B101A0649C6004E44B4 /* CoreGraphics.framework */,
+				F4082B0E1A06499E004E44B4 /* AudioToolbox.framework */,
 				36F692A28A49678F866D4388 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -202,9 +222,9 @@
 				F49145291A049D8E004DCB29 /* AppDelegate.swift */,
 				F491452B1A049D8E004DCB29 /* ViewController.swift */,
 				F48E34F31A05F5BC003B8C8B /* MessageViewController.swift */,
+				F46B7EBE1A0659DA00FEC201 /* MessageItemViewController.swift */,
 				F491452D1A049D8E004DCB29 /* Main.storyboard */,
 				F49145301A049D8E004DCB29 /* Images.xcassets */,
-				F49145321A049D8E004DCB29 /* LaunchScreen.xib */,
 				F48E34F51A060336003B8C8B /* Models */,
 				F49145271A049D8E004DCB29 /* Supporting Files */,
 				F48E34ED1A05D874003B8C8B /* LaTeXt-Bridging-Header.h */,
@@ -346,6 +366,7 @@
 				TargetAttributes = {
 					F49145231A049D8E004DCB29 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 52RD2GH5DP;
 					};
 					F49145381A049D8E004DCB29 = {
 						CreatedOnToolsVersion = 6.1;
@@ -363,6 +384,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F491451B1A049D8E004DCB29;
 			productRefGroup = F49145251A049D8E004DCB29 /* Products */;
@@ -382,7 +404,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F491452F1A049D8E004DCB29 /* Main.storyboard in Resources */,
-				F49145341A049D8E004DCB29 /* LaunchScreen.xib in Resources */,
 				F49145311A049D8E004DCB29 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +481,7 @@
 				F48E34F41A05F5BC003B8C8B /* MessageViewController.swift in Sources */,
 				F491456F1A0566DB004DCB29 /* Dimension.swift in Sources */,
 				F491457B1A0566DB004DCB29 /* LayoutProxy.swift in Sources */,
+				F46B7EBF1A0659DA00FEC201 /* MessageItemViewController.swift in Sources */,
 				F491456B1A0566DB004DCB29 /* Coefficients.swift in Sources */,
 				F491457F1A0566DB004DCB29 /* Priority.swift in Sources */,
 			);
@@ -518,14 +540,6 @@
 				F491452E1A049D8E004DCB29 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F49145321A049D8E004DCB29 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F49145331A049D8E004DCB29 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -613,11 +627,15 @@
 			baseConfigurationReference = 0383330CF28A980C21487520 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LaTeXt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e60cf0cc-e6aa-47a9-b34e-8f0fbab6804f";
 				SWIFT_OBJC_BRIDGING_HEADER = "LaTeXt/LaTeXt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -628,11 +646,15 @@
 			baseConfigurationReference = 39E3A8B4EA7F7B1CFA4F854B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LaTeXt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e60cf0cc-e6aa-47a9-b34e-8f0fbab6804f";
 				SWIFT_OBJC_BRIDGING_HEADER = "LaTeXt/LaTeXt-Bridging-Header.h";
 			};
 			name = Release;

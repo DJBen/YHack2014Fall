@@ -14,4 +14,6 @@
 
 - (NSAttributedString *)bubbleAttributtedStringWithText:(NSString *)text;
 
+- (NSAttributedString *)bubbleAttributtedStringWithLaTeX:(NSArray *)latex;
+
 @end

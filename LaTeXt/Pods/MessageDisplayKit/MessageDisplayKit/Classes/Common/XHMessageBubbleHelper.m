@@ -60,6 +60,23 @@
                               }];
 }
 
+- (NSAttributedString *)bubbleAttributtedStringWithLaTeX:(NSArray *)latex {
+    if (!latex) {
+        return [[NSAttributedString alloc] init];
+    }
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] init];
+    for (NSObject *object in latex) {
+        if ([object isKindOfClass:[UIImage class]]) {
+            NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
+            textAttachment.image = (UIImage *)object;
+            [str appendAttributedString:[NSAttributedString attributedStringWithAttachment:textAttachment]];
+        } else if ([object isKindOfClass:[NSString class]]) {
+            [str appendAttributedString:[[NSAttributedString alloc] initWithString:(NSString *)object]];
+        }
+    }
+    return str;
+}
+
 - (NSAttributedString *)bubbleAttributtedStringWithText:(NSString *)text {
     if (!text) {
         return [[NSAttributedString alloc] init];

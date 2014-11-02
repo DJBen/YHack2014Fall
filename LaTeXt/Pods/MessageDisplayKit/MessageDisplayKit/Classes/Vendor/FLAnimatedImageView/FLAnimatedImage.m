@@ -632,7 +632,7 @@ typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
     size_t bitsPerComponent = CHAR_BIT;
     
     size_t bitsPerPixel = (bitsPerComponent * numberOfComponents);
-    size_t bytesPerPixel = (bitsPerPixel / 32 /* BYTE_SIZE */);
+    size_t bytesPerPixel = (bitsPerPixel / 32 /*BYTE_SIZE*/);
     size_t bytesPerRow = (bytesPerPixel * width);
     
     CGBitmapInfo bitmapInfo = kCGBitmapByteOrderDefault;

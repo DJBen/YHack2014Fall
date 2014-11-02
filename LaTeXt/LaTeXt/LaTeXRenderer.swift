@@ -16,20 +16,21 @@ class LaTeXRenderer: NSObject {
     return Static.instance
 }
     
-    func fetchPreviewImageForLaTeX(LaTeX: String, fetchBlock: (image: UIImage?, error: NSError?) -> Void) {
+    func fetchPreviewImageForLaTeX(LaTeX: String, fetchBlock: (LaTeX: String, image: UIImage?, error: NSError?) -> Void) {
         let parameters: [String: String] = ["cht": "tx", "chl": LaTeX]
         let latexRequest = request(.POST, "https://chart.googleapis.com/chart", parameters: parameters)
         latexRequest.response { (urlRequest, urlResponse, responseData, error) -> Void in
-            println(urlRequest)
-            println(urlResponse)
-            println(error)
+//            println(urlRequest)
+//            println(urlResponse)
+//            println(error)
             if error != nil {
-                fetchBlock(image: nil, error: error)
+                fetchBlock(LaTeX: LaTeX, image: nil, error: error)
             }
             if let image = UIImage(data: (responseData as NSData)) {
-                fetchBlock(image: image, error: nil)
+                fetchBlock(LaTeX: LaTeX, image: image, error: nil)
             } else {
                 println("Image not valid")
+                fetchBlock(LaTeX: LaTeX, image: nil, error: NSError(domain: "YHack", code: 499, userInfo: nil))
             }
         }
     }

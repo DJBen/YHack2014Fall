@@ -47,7 +47,7 @@ class KeyboardViewController: UIInputViewController {
             return "\(number % 10)"
         }
         let buttonTitles2 = ["+", "-", "<", ">", "!", "?", "(", ")", "[", "]"]
-        let buttonTitles3 = ["\\", "{", "}", "_", "^", "+", "-", "\u{00b7}" /* cdot */, "/", "x", "e"]
+        let buttonTitles3 = ["\\", "{", "}", "_", "^", "+", "-", "\u{00b7}" /* cdot */, "/", "="]
         let buttonTitles4 = ["\u{222b}" /* integral */, "\u{2211}" /* sum */, "\u{21D2}" /* implies */, "\u{00bd}" /* one half */, "\u{2208}" /* in */, "\u{2282}" /* subset */, "\u{2264}", "\u{2265}" /* leq and geq */, "\u{03c0}"/* PI */, "BP"]
         let buttonTitles5 = ["SNIP", "Aa", "CHG", "SPACE", "RETURN"]
         
@@ -60,7 +60,7 @@ class KeyboardViewController: UIInputViewController {
             "\u{2211}": "\\sum",
             "\u{00bd}": "\\frac{",
             "\u{00b7}": "\\cdot",
-            "\u{21D2}": "\\implies",
+            "\u{21D2}": "\\Rightarrow",
             "\u{2208}": "\\in",
             "\u{2282}": "\\subset",
             "\u{2264}": "\\leq", "\u{2265}": "\\geq",
@@ -146,6 +146,7 @@ class KeyboardViewController: UIInputViewController {
         
         extraLabel.textColor = UIColor.whiteColor()
         extraLabel.text = ""
+        extraLabel.lineBreakMode = .ByTruncatingHead
         extraView.addSubview(extraLabel)
         
         previewButton = UIButton.buttonWithType(.System) as UIButton
@@ -226,7 +227,7 @@ class KeyboardViewController: UIInputViewController {
     func showPreview(sender: UIButton!) {
         if !isPreviewShowing && extraLabel.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 {
             // Show preview now
-            LaTeXRenderer.sharedRenderer.fetchPreviewImageForLaTeX(extraLabel.text!, fetchBlock: { (image: UIImage?, error: NSError?) -> Void in
+            LaTeXRenderer.sharedRenderer.fetchPreviewImageForLaTeX(extraLabel.text!, fetchBlock: { (_, image: UIImage?, error: NSError?) -> Void in
                 if error == nil {
                     self.previewImageView.image = image
                     self.previewView.layoutIfNeeded()
@@ -285,14 +286,15 @@ class KeyboardViewController: UIInputViewController {
             case "Aa":
                 isShowingSymbols = !isShowingSymbols
             default:
-                let output = keyText[title] ?? title
+                let output = (keyText[title] ?? title).lowercaseString
                 if isExtraViewOpen() {
                     extraLabel.text = extraLabel.text! + output
                 } else {
                     if !isShowingSymbols && !isCapOn {
                         proxy.insertText(output.lowercaseString)
                     } else {
-                        proxy.insertText(output)
+                        proxy.insertText(output.lowercaseString)
+//                        proxy.insertText(output)
                     }
                 }
             }

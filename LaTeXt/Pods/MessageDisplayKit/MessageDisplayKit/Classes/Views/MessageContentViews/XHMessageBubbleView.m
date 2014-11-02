@@ -219,6 +219,8 @@
     switch (message.messageMediaType) {
         case XHBubbleMessageMediaTypeText:
             _displayTextView.attributedText = [[XHMessageBubbleHelper sharedMessageBubbleHelper] bubbleAttributtedStringWithText:[message text]];
+//            _displayTextView.attributedText = [[XHMessageBubbleHelper sharedMessageBubbleHelper] bubbleAttributtedStringWithLaTeX:(NSArray*)[(XHMessage *)message valueForKey:"latex"]];
+
             break;
         case XHBubbleMessageMediaTypePhoto:
             [_bubblePhotoImageView configureMessagePhoto:message.photo thumbnailUrl:message.thumbnailUrl originPhotoUrl:message.originPhotoUrl onBubbleMessageType:self.message.bubbleMessageType];

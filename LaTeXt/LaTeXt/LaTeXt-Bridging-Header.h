@@ -3,4 +3,4 @@
 //
 
 #import <WindowsAzureMobileServices.h>
-#import <XHMessageTableViewController.h>
+#import "XHMessageTableViewController.h"

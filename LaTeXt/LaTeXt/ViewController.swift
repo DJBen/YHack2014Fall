@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.\
+        
         let client = AzureManager.sharedManager.client
         loginWithCompletion { (user, error) -> Void in
             if error != nil {
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func activityButtonTapped(sender: UIButton!) {
-        LaTeXRenderer.sharedRenderer.fetchPreviewImageForLaTeX("\(textField.text)", fetchBlock: { (image, error) -> Void in
+        LaTeXRenderer.sharedRenderer.fetchPreviewImageForLaTeX("\(textField.text)", fetchBlock: { (_, image, error) -> Void in
             if error != nil {
                 println("Fetch preview error")
             }
