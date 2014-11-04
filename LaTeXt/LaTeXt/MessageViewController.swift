@@ -51,6 +51,7 @@ class MessageViewController: XHMessageTableViewController {
             // Logged in
             sender.title = "Login"
             client.logout()
+            NSNotificationCenter.defaultCenter().removeObserver(self)
         } else {
             loginWithCompletion(nil)
         }
@@ -70,7 +71,7 @@ class MessageViewController: XHMessageTableViewController {
                             println("Error")
                         }
                     })
-
+                    NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadMessages", name: refreshNotificationName, object: nil)
                     self.loginButton.title = "Logout"
                 }
                 completion?(user, error)
@@ -85,6 +86,12 @@ class MessageViewController: XHMessageTableViewController {
     }
     
     @IBAction func activityButtonTapped(sender: UIBarButtonItem!) {
+        if messageInputView.inputTextView.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) <= 0 {
+            let alertController = UIAlertController(title: "Type something", message: "Type some LaTeX in the message bar.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
         LaTeXRenderer.sharedRenderer.fetchPreviewImageForLaTeX("\(messageInputView.inputTextView.text)", fetchBlock: { (_, image, error) -> Void in
             if error != nil {
                 println("Fetch preview error")
@@ -121,7 +128,7 @@ class MessageViewController: XHMessageTableViewController {
         loadMessages()
     }
     
-    private func loadMessages() {
+    func loadMessages() {
         loadingMoreMessage = true
         AzureManager.sharedManager.receiveMessagesWithCompletion { (messages, error) -> Void in
             if error != nil {

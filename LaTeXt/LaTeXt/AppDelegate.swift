@@ -8,6 +8,7 @@
 
 import UIKit
 
+let refreshNotificationName = "RemoteNotificationReceivedNotification"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -38,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let messageKey = "inAppMessage"
         // TODO
         println("RECEIVED REMOTE NOTIFICATION: \(userInfo)")
+        NSNotificationCenter.defaultCenter().postNotificationName(refreshNotificationName, object: nil)
     }
     
     func applicationWillResignActive(application: UIApplication) {

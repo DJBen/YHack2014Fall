@@ -56,7 +56,7 @@ class AzureManager: NSObject {
     func receiveMessagesWithCompletion(completion: (messages: [YHDeliveredMessage]?, error: NSError?) -> Void) {
         let messageTable = client.tableWithName("Message")
         let query = MSQuery(table: messageTable, predicate: NSPredicate(format: "recipient == %@", client.currentUser.userId))
-        query.orderByDescending("__createdAt")
+        query.orderByAscending("__createdAt")
         query.fetchLimit = 30
         query.includeTotalCount = true
         query.readWithCompletion { (items, totalCount, error) -> Void in
